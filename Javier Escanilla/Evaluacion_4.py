@@ -125,14 +125,11 @@ def main():
                     titulo()
                     print("*** Mostrar Libros ***")
                     print("=== Lista de Libros ===")
-                    if libros != None:
-                        for i in libros:
-                            print(f"\nNombre: {libros[i]['nombre']}")
-                            print(f"Copias: {libros[i]['copias']}")
-                            print(f"Prestamo: {libros[i]['prestamo']}")
-                            print(f"Disponibilidad: {libros[i]['disponible']}")
-                    else:
-                        print("=== No hay titulos disponible ===")
+                    for i in libros:
+                        print(f"\nNombre: {libros[i]['nombre']}")
+                        print(f"Copias: {libros[i]['copias']}")
+                        print(f"Prestamo: {libros[i]['prestamo']}")
+                        print(f"Disponibilidad: {libros[i]['disponible']}")
                         
                 elif opcion == "6":
                     print("Saliendo...")
